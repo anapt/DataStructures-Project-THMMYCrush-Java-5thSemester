@@ -8,18 +8,18 @@ import java.util.ArrayList;
  * * <p>
  * Developed by:
  * </p>
- * 
+ *
  * <p>
  * Konstantinos Flevarakis <br>
- * 8720 || flevarks@ece.auth.gr <br>
- * t: 698 095 5071 
+ * XXXX || flevarks@ece.auth.gr <br>
+ * t: XXX XXX XXXX
  * </p>
  * </p>
  * Anastasia Pachni Tsitiridou <br>
- * 8485 || aipachni@ece.auth.gr <br>
- * t: 697 234 3805
+ * XXXX || aipachni@ece.auth.gr <br>
+ * t: XXX XXX XXXX
  * </p>
- * 
+ *
  * @author Pachni Tsitiridou A
  *
  */
@@ -129,7 +129,7 @@ public class HeuristicPlayer implements AbstractPlayer
    * calls moveEvaluation for each move
    * and finds the move with the highest evaluation
    * than returns the index of that move.
-   * 
+   *
    * @param availableMoves
    * @param board
    * @return
@@ -156,7 +156,7 @@ public class HeuristicPlayer implements AbstractPlayer
 
   }
 
- 
+
   /**
    * first stage of evaluation
    * scans the entire board 2 times and finds the horizontal and vertical
@@ -290,7 +290,7 @@ public class HeuristicPlayer implements AbstractPlayer
 		  return false; // else move is HORIZONTAL
 	  }
   }
-  
+
 
   /**
    * keeps a sum of the number of candies with the same color
@@ -299,7 +299,7 @@ public class HeuristicPlayer implements AbstractPlayer
    * @return
    */
   int[] colorCheck(int colorCode, int[] counters){
-    
+
 
     switch(colorCode){
     case CrushUtilities.RED:
@@ -320,14 +320,14 @@ public class HeuristicPlayer implements AbstractPlayer
 
     return counters;
   }
-  
+
 
   /**
    * forth stage of evaluation
-   * 
+   *
    * checks a 3x3 array around the tile taking into account all places a tile
    * may be, then calls colorCheck that keeps a sum of the tiles with the same color
-   * 
+   *
    * @param width
    * @param height
    * @param board
@@ -453,9 +453,7 @@ public class HeuristicPlayer implements AbstractPlayer
 
   }
 
-  /*
-   * evaluates move using the 4 different methods above
-   */
+
   /**
    * EVALUATION
    * evaluates each move using the 4 aforementioned ways
